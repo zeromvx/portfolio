@@ -25,9 +25,13 @@ a {
   max-width: 250px;
   height: 100%;
   position: fixed;
+  z-index: 8;
   left: 0;
   top: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #ffffff;
 }
 
 .navbar__logo {
@@ -128,5 +132,206 @@ a {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   color: #7280ff;
+}
+
+.toggle-icon {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  margin-right: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background: #7280ff;
+  z-index: 8;
+  display: none;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.toggle-icon #nav-icon3 {
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle-icon #nav-icon3 span {
+  display: block;
+  height: 2px;
+  width: 45%;
+  left: 13px;
+  position: absolute;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.toggle-icon #nav-icon3 span:nth-child(1) {
+  top: 17px;
+}
+
+.toggle-icon #nav-icon3 span:nth-child(2), .toggle-icon #nav-icon3 span:nth-child(3) {
+  top: 22px;
+}
+
+.toggle-icon #nav-icon3 span:nth-child(4) {
+  top: 27px;
+}
+
+.toggle-icon #nav-icon3.open span:nth-child(1) {
+  top: 27px;
+  width: 0%;
+  left: 50%;
+}
+
+.toggle-icon #nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.toggle-icon #nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.toggle-icon #nav-icon3.open span:nth-child(4) {
+  top: 27px;
+  width: 0%;
+  left: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    left: -100%;
+  }
+  .toggle-icon {
+    display: block;
+  }
+}
+
+.home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.home::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.home__content {
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__logo {
+  width: 100%;
+  max-width: 160px;
+}
+
+.home__logo img {
+  width: 100%;
+  border: 5px solid #7280ff;
+  border-radius: 50%;
+  margin: .8rem 0;
+}
+
+.home__name {
+  font-size: 2.5rem;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home__desc {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.socials {
+  margin: 1.5rem;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.socials li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.socials li:hover a {
+  background: #7280ff;
+}
+
+.socials li i {
+  width: 100%;
+  color: #ffffff;
+}
+
+.main-content {
+  padding-left: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

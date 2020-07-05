@@ -1,3 +1,14 @@
-@import "base/base";
+@import "base/base"
     
-@import "sections/header";
+@import "sections/header"
+@import "sections/home"
+
+.main-content 
+    padding-left: 250px
+    position: relative
+    z-index: 2
+
+@media screen and (max-width: 1024px)
+    .main-content
+        padding: 0
+
