@@ -1,0 +1,74 @@
+.home 
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: url("../img/home-bg.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: relative
+    color: #ffffff
+
+    &::before
+        position: absolute
+        content: ""
+        background: rgba(0, 0, 0, .6)
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        z-index: 2
+
+    &__content
+        z-index: 4
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__logo
+        width: 100%
+        max-width: 160px
+
+        img
+            width: 100%
+            border: 5px solid #7280ff
+            border-radius: 50%
+            margin: .8rem 0
+
+    &__name
+        font-size: 2.5rem
+        line-height: 50px
+        font-weight: 700
+        margin-bottom: 1rem
+
+    &__desc
+        font-size: 18px
+        font-weight: 600
+        color: #fff
+
+
+.socials
+    margin: 1.5rem
+
+    li
+        display: inline-block
+
+        a
+            display: block
+            width: 40px
+            height: 40px
+            font-size: 14px
+            line-height: 42px
+            text-align: center
+            border-radius: 50%
+            transition: all 0.3s ease-in
+            border: 1px solid rgba(255, 255, 255, 0.2)
+
+        &:hover a 
+            background: #7280ff
+        i
+            width: 100%
+            color: #ffffff
+
