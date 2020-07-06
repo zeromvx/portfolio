@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergey Karmanov</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <!-- FontAwesome -->
@@ -29,7 +29,7 @@
             
             <div class="navbar__logo">
                 <div class="logo">
-                    <img src="img/about.jpg" alt="">
+                    <img src="img/photo2.jpg" alt="">
                 </div>
                 <div class="name">
                     <h2>Sergey Karmanov</h2>
@@ -38,20 +38,20 @@
             <!-- /.navbar__logo -->
             <ul class="nav">
 				<li>
-					<a href="#about" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-home fa-fw"></i>Home</a>
+					<a href="#about"><i class="fa fa-home fa-fw"></i>Home</a>
 				</li>
 				<li>
-					<a href="#service" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-user fa-fw"></i>About</a>
+					<a href="#service"><i class="fa fa-user fa-fw"></i>About</a>
 				</li>
 				<li>
-					<a href="#resume" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-file-text fa-fw"></i>Resume</a>
+					<a href="#resume"><i class="fa fa-file-text fa-fw"></i>Resume</a>
 				</li>
 				<li>
-					<a href="#project-gallery" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
+					<a href="#project-gallery"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
 				</li>
 
 				<li>
-					<a href="#contact" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-whatsapp fa-fw"></i>Contact</a>
+					<a href="#contact"><i class="fa fa-whatsapp fa-fw"></i>Contact</a>
 				</li>
             </ul>
             <!-- /.nav -->
@@ -64,15 +64,15 @@
     <main class="main-content">
         <section class="home">
             <div class="home__content">
-                <div class="home__logo">
-                    <img src="img/about.jpg" alt="">
+                <div class="home__logo wow zoomIn" data-wow-delay="0.2s">
+                    <img src="img/photo1.jpg" alt="">
                 </div>
     
-                <h1 class="home__name">Sergey Karmanov</h1>
+                <h1 class="home__name wow fadeInUp" data-wow-delay="0.4s">Sergey Karmanov</h1>
                 
-                <p class="home__desc">I`m Frontend Developer</p>
+                <p class="home__desc wow fadeInUp" data-wow-delay="0.4s">I`m Frontend Developer</p>
 
-                <ul class="socials">
+                <ul class="socials wow fadeInUp" data-wow-delay="0.4s">
                     <li>
                         <a href="#">
                             <i class="fa fa-facebook fa-lg"></i>
@@ -107,7 +107,7 @@
         <section class="about">
 
             <div class="about__title">
-                <h2 class="title">
+                <h2 class="title wow fadeInUp" data-wow-delay="0.4s">
                     About
                     <span class="title__color">me</span>
                     <span class="title__bg-text">about</span>
@@ -116,11 +116,11 @@
             <!-- /.about__title -->
 
             <div class="about__content">
-                <div class="about__logo">
+                <div class="about__logo wow fadeInUp" data-wow-delay="0.4s">
                     <img src="img/about.jpg" alt="" class="logo__image">
                 </div>
 
-                <div class="descr">
+                <div class="descr wow fadeInUp" data-wow-delay="0.4s">
                     <p>Hi, My name is Sergey Karmanov. I`m a third year student of Moscow Polytechnical University. I`m 19 years old.
                         I like develope web-sites and web applications, read a books, do sports and communicate with people. 
                     </p>
@@ -135,7 +135,7 @@
             <!-- /.about__content -->
             
             <div class="about__info-wrap">
-                <ul class="about__info">
+                <ul class="about__info wow fadeInUp" data-wow-delay="0.4s">
                     <li><label>Birthday:</label>28.12.2000</li>
                     <li><label>Age:</label>19 years old</li>
                     <li><label>City:</label>Moscow, Russia</li>
@@ -153,7 +153,7 @@
 
         <section class="resume">
             <div class="resume__title">
-                <h2 class="title">
+                <h2 class="title wow zoomIn" data-wow-delay="0.2s">
                     My
                     <span class="title__color">Resume</span>
                     <span class="title__bg-text">Resume</span>
@@ -163,7 +163,7 @@
 
             <ul class="resume__content">
 
-                <li class="skills">
+                <li class="skills wow fadeInUp" data-wow-delay="0.4s">
                     <ul>
                         <h4 class="skills__title">Hard skills</h4>
                         <li>
@@ -194,7 +194,7 @@
                 </li>
                 <!-- /.hard-skills -->
 
-                <li class="skills">
+                <li class="skills wow fadeInUp" data-wow-delay="0.4s">
                     <ul>
                         <h4 class="skills__title">Language skills</h4>
                         <li>
@@ -226,5 +226,9 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 </html>
