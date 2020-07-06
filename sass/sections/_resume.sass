@@ -1,0 +1,81 @@
+.resume
+    padding: 5rem 0 0 0 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        position: relative
+
+    &__content
+        padding: 2rem 0
+        margin-top: 1rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+        max-width: 1140px
+
+        @media screen and (max-width: 1024px)
+            max-width: 680px
+
+.skills
+    width: 100%
+    max-width: 50%
+    padding: 1rem
+
+    ul
+        padding: 1rem
+        background: #ffffff
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
+
+        .skills__title
+            border-bottom: 1px solid rgba(0,0,0, .2)
+            padding: 5px
+
+        li
+            margin: 20px 0
+
+        label
+            display: inline-block
+            color: #555
+            font-weight: 600
+            min-width: 100px
+
+.line
+    position: relative
+    overflow: hidden
+    margin: 5px 0
+    width: 100%
+    height: 1rem
+    border-radius: .25rem
+    background: rgba(0, 0, 0, .1)
+
+    &::before
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        height: 1rem
+        background: #4285f4
+
+.russian-line
+
+    &::before
+        width: 90%
+
+.english-line
+
+    &::before
+        width: 60%
+
+.japanese-line
+
+    &::before
+        width: 10%
+
+@media screen and (max-width: 1024px)
+    .skills
+        max-width: 100%
+        

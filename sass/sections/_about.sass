@@ -1,0 +1,125 @@
+.about
+    padding: 5rem 0 0 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        position: relative
+
+    &__content
+        padding: 1rem 
+        margin-top: 1rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 100%
+        max-width: 1140px
+
+        .descr
+            align-self: center
+            background: #ffffff
+            box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
+            padding: 1rem 2rem
+            width: 100% 
+            max-width: 66%
+            border-radius: 10px
+            font-size: 16px
+            color: #666
+            line-height: 1.625
+            hyphens: auto
+
+            p
+                margin-bottom: 1rem
+
+    &__logo
+        position: relative
+        overflow: hidden
+        padding: 1rem
+        width: 100%
+        max-width: 31%
+        height: calc(100% - 6.8rem)
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
+        border-radius: 10px
+
+
+        img
+            width: 100%
+            border-radius: 10px
+            object-fit: cover
+            position: relative
+
+    &__info-wrap
+        width: 100%
+        max-width: 1140px
+        padding: 1rem 
+
+    &__info
+        padding: 1.5rem
+        display: flex
+        flex-wrap: wrap
+        margin: 0 auto
+        background: #ffffff
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
+        border-radius: 10px
+
+        li
+            flex: 50%
+            margin-bottom: 10px
+
+        label 
+            display: inline-block
+            color: #555
+            font-weight: 600
+            min-width: 100px
+
+.title
+    font-size: 2rem
+    font-weight: 700
+    color: #555
+    display: inline-block
+    position: relative
+    text-transform: uppercase
+
+    &__color
+        color: #7280ff
+
+    &__bg-text
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        font-size: 4rem
+        z-index: -1
+        opacity: 0.07
+
+@media screen and (max-width: 1024px)
+    .about
+
+        &__content
+            justify-content: center
+
+            .descr
+                max-width: 100%
+                margin: 1rem 0 0 0
+
+        &__logo
+            max-width: 400px
+
+        &__info
+            max-width: 100%
+
+@media screen and (max-width: 768px)
+
+    .about
+
+        &__content
+
+            .descr
+                padding: 1rem
+
+        &__info
+
+            li 
+                flex: 100%
