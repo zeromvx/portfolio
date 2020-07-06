@@ -547,29 +547,29 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.skills {
+.skills-wrap {
   width: 100%;
   max-width: 50%;
   padding: 1rem;
 }
 
-.skills ul {
+.skills-wrap .skills {
   padding: 1rem;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
-.skills ul .skills__title {
+.skills-wrap .skills .skills__title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px;
 }
 
-.skills ul li {
+.skills-wrap .skills li {
   margin: 20px 0;
 }
 
-.skills ul label {
+.skills-wrap .skills label {
   display: inline-block;
   color: #555;
   font-weight: 600;
