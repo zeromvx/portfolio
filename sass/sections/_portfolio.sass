@@ -1,0 +1,55 @@
+.portfolio
+    padding: 5rem 0 0 0 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        position: relative
+
+    &__content
+        padding: 1rem 
+        margin-top: 1rem
+        width: 100%
+        max-width: 1140px
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+        grid-gap: 3rem
+
+    &__filter
+        padding: 2rem 1rem
+
+        li
+            display: inline-block
+            margin: 0 15px
+
+.filter__btn
+    padding: .5rem 2rem 
+    margin: 0 5px
+    font-size: 1rem
+    color: #666
+    background: #ffffff
+    border: 1px solid #7280ff
+    border-radius: 5px
+    cursor: pointer
+    transition: all .65s
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
+
+    &:hover
+        color: #ffffff
+        background: #7280ff
+
+    &.active
+        color: #ffffff
+        background: #7280ff
+
+.work
+
+    &__image
+        width: 100%
+        height: calc(100% - 6.8rem)
+        object-fit: cover
+
+    &__descr
+        text-align: center

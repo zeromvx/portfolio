@@ -172,6 +172,10 @@
                                 HTML5, CSS3, JS ES6
                             </li>
                             <li>
+                                <label>Graphic redactors:</label>
+                                Figma
+                            </li>
+                            <li>
                                 <label>Preprocesors:</label>
                                 Sass
                             </li>
@@ -228,14 +232,101 @@
         </section>
         <!-- /.resume -->
 
+        <section class="portfolio">
+            <div class="portfolio__title">
+                <h2 class="title wow zoomIn" data-wow-delay="0.2s">
+                    My
+                    <span class="title__color">portfolio</span>
+                    <span class="title__bg-text">portfolio</span>
+                </h2>
+            </div>
+            <!-- /.portfolio__title -->
+
+            <div class="portfolio__filter filter-options">
+                <button class="filter__btn active" data-filter="all">All</button>
+                <button class="filter__btn" data-filter=".category-a">Verstka</button>
+                <button class="filter__btn" data-filter=".category-b">JS</button>
+                <button class="filter__btn" data-group="react">React</button>      
+            </div>
+            <!-- /.portfolio__filter -->
+
+            <ul class="portfolio__content container">
+                <li class="work mix category-a" data-order="1">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-a" data-order="1"> 
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-a" data-order="1">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-a" data-order="1">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-b" data-order="2">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-b" data-order="2">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-b" data-order="2">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+                <li class="work mix category-b" data-order="2">
+                    <figure>
+                        <img src="img/about.jpg" alt="" class="work__image">
+                        <figcaption class="work__descr">HTML shablon</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- /.portfolio__content -->
+        </section>
+        <!-- /.portfolio -->
+
+        <footer class="footer">
+            <p>2020, Sergey Karmanov</p>
+        </footer>
+        <!-- /.footer -->
     </main>
     <!-- /.main-content -->
 
 
+
+
     <script src="js/main.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+      var mixer = mixitup('.container');
+      const btnArea = document.querySelector(".portfolio__filter");
+      btnArea.addEventListener('click', (e) => {
+        if (e.target.tagName == "BUTTON") {
+            
+        }
+        
+      });
     </script>
 </body>
 </html>
