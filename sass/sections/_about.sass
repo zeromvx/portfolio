@@ -82,6 +82,9 @@
     position: relative
     text-transform: uppercase
 
+    @media screen and (max-width: 540px)
+            font-size: 1.75rem
+
     &__color
         color: #7280ff
 
@@ -93,6 +96,13 @@
         font-size: 4rem
         z-index: -1
         opacity: 0.07
+
+    
+        @media screen and (max-width: 540px)
+            font-size: 3rem
+
+        @media screen and (max-width: 360px)
+            font-size: 2.5rem
 
 @media screen and (max-width: 1024px)
     .about

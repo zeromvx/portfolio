@@ -14,15 +14,12 @@
         width: 100%
         max-width: 1140px
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr))
         grid-gap: 3rem
 
     &__filter
-        padding: 2rem 1rem
+        padding: 2rem 0
 
-        li
-            display: inline-block
-            margin: 0 15px
 
 .filter__btn
     padding: .5rem 2rem 
@@ -43,6 +40,15 @@
     &.active
         color: #ffffff
         background: #7280ff
+
+
+
+    @media screen and (max-width: 768px)
+        padding: .5rem 1rem
+
+    @media screen and (max-width: 540px)
+        margin: 0 2px
+        font-size: .8rem
 
 .work
 
