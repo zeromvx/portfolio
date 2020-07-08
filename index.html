@@ -38,20 +38,16 @@
             <!-- /.navbar__logo -->
             <ul class="nav">
 				<li>
-					<a href="#about"><i class="fa fa-home fa-fw"></i>Home</a>
+					<a href="#home" class="active"><i class="fa fa-home fa-fw"></i>Home</a>
 				</li>
 				<li>
-					<a href="#service"><i class="fa fa-user fa-fw"></i>About</a>
+					<a href="#about"><i class="fa fa-user fa-fw"></i>About</a>
 				</li>
 				<li>
 					<a href="#resume"><i class="fa fa-file-text fa-fw"></i>Resume</a>
 				</li>
 				<li>
-					<a href="#project-gallery"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
-				</li>
-
-				<li>
-					<a href="#contact"><i class="fa fa-whatsapp fa-fw"></i>Contact</a>
+					<a href="#portfolio"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
 				</li>
             </ul>
             <!-- /.nav -->
@@ -62,7 +58,7 @@
     <!-- /.header -->
 
     <main class="main-content">
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__content">
                 <div class="home__logo wow zoomIn" data-wow-delay="0.2s">
                     <img src="img/p1.jpg" alt="">
@@ -104,7 +100,7 @@
         </section>
         <!-- /.home -->
 
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="about__title">
                 <h2 class="title wow fadeInUp" data-wow-delay="0.4s">
@@ -151,7 +147,7 @@
         </section>
         <!-- /.about -->
 
-        <section class="resume">
+        <section class="resume" id="resume">
             <div class="resume__title">
                 <h2 class="title wow zoomIn" data-wow-delay="0.2s">
                     My
@@ -232,7 +228,7 @@
         </section>
         <!-- /.resume -->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio__title">
                 <h2 class="title wow zoomIn" data-wow-delay="0.2s">
                     My
@@ -251,49 +247,57 @@
             <!-- /.portfolio__filter -->
 
             <ul class="portfolio__content container">
-                <li class="work mix category-a" data-order="1">
+
+                <li class="work mix category-a wow fadeInUp" data-order="1" data-wow-delay="0.4s">
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-a" data-order="1"> 
+
+                <li class="work mix category-a wow fadeInUp" data-order="1" data-wow-delay="0.4s"> 
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-a" data-order="1">
+
+                <li class="work mix category-a wow fadeInUp" data-order="1" data-wow-delay="0.4s">
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-a" data-order="1">
+
+                <li class="work mix category-a wow fadeInUp" data-order="1" data-wow-delay="0.4s">
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-b" data-order="2">
+
+                <li class="work mix category-b wow fadeInUp" data-order="2" data-wow-delay="0.4s">
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-b" data-order="2">
+
+                <li class="work mix category-b wow fadeInUp" data-order="2" data-wow-delay="0.4s"> 
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-b" data-order="2">
+
+                <li class="work mix category-b wow fadeInUp" data-order="2" data-wow-delay="0.4s">
                     <figure>
-                        <img src="img/about.jpg" alt="" class="work__image">
+                        <img src="img/about.jpg" alt="" class="work__image" data-wow-delay="0.4s">
                         <figcaption class="work__descr">HTML shablon</figcaption>
                     </figure>
                 </li>
-                <li class="work mix category-b" data-order="2">
+
+                <li class="work mix category-b wow fadeInUp" data-order="2" data-wow-delay="0.4s">
                     <figure>
                         <img src="img/about.jpg" alt="" class="work__image">
                         <figcaption class="work__descr">HTML shablon</figcaption>
@@ -305,28 +309,15 @@
         <!-- /.portfolio -->
 
         <footer class="footer">
-            <p>2020, Sergey Karmanov</p>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">2020, Sergey Karmanov</p>
         </footer>
         <!-- /.footer -->
     </main>
     <!-- /.main-content -->
 
-
-
-
-    <script src="js/main.js"></script>
+ 
     <script src="js/mixitup.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-      var mixer = mixitup('.container');
-      const btnArea = document.querySelector(".portfolio__filter");
-      btnArea.addEventListener('click', (e) => {
-        if (e.target.tagName == "BUTTON") {
-            
-        }
-        
-      });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
