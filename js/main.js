@@ -1,8 +1,8 @@
 // toggle button 
-const toggleBtn = document.querySelector('.toggle-icon'),
-    header = document.querySelector('.header'),
-    icon = document.getElementById('nav-icon3'),
-    mainContent = document.querySelector(".main-content");
+const toggleBtn = document.querySelector('.toggle-icon');
+const header = document.querySelector('.header');
+const icon = document.getElementById('nav-icon3');
+const mainContent = document.querySelector(".main-content");
 
 toggleBtn.addEventListener('click', () => {
     if (!toggleBtn.classList.contains('active')) {
@@ -34,7 +34,8 @@ const mixer = mixitup('.container');
 
 // portfolio filter buttons
 const btnArea = document.querySelector('.portfolio__filter');
-const portfBtns = document.querySelectorAll('.filter__btn')
+const portfBtns = document.querySelectorAll('.filter__btn');
+
 btnArea.addEventListener('click', (e) => {
     if (e.target.tagName == 'BUTTON') {
         for (let i = 0; i < portfBtns.length; i++) {
