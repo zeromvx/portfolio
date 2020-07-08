@@ -1,9 +1,8 @@
-
 // toggle button 
 const toggleBtn = document.querySelector('.toggle-icon'),
-        header = document.querySelector('.header'),
-        icon = document.getElementById('nav-icon3'),
-        mainContent = document.querySelector(".main-content");
+    header = document.querySelector('.header'),
+    icon = document.getElementById('nav-icon3'),
+    mainContent = document.querySelector(".main-content");
 
 toggleBtn.addEventListener('click', () => {
     if (!toggleBtn.classList.contains('active')) {
@@ -38,10 +37,10 @@ const btnArea = document.querySelector('.portfolio__filter');
 const portfBtns = document.querySelectorAll('.filter__btn')
 btnArea.addEventListener('click', (e) => {
     if (e.target.tagName == 'BUTTON') {
-            for (let i = 0; i < portfBtns.length; i++){
-                portfBtns[i].classList.remove('active');
-            }
-            e.target.classList.add('active');
+        for (let i = 0; i < portfBtns.length; i++) {
+            portfBtns[i].classList.remove('active');
+        }
+        e.target.classList.add('active');
     }
 });
 
