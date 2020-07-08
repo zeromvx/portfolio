@@ -4,7 +4,7 @@ const header = document.querySelector('.header');
 const icon = document.getElementById('nav-icon3');
 const mainContent = document.querySelector(".main-content");
 
-toggleBtn.addEventListener('click', () => {
+toggleBtn.addEventListener('click', function() {
     if (!toggleBtn.classList.contains('active')) {
         toggleBtn.classList.add('active');
         icon.classList.add('open');
@@ -16,7 +16,7 @@ toggleBtn.addEventListener('click', () => {
     }
 });
 
-mainContent.addEventListener("click", () => {
+mainContent.addEventListener("click", function() {
     if (toggleBtn.classList.contains('active')) {
         toggleBtn.classList.remove('active');
         icon.classList.remove('open');
@@ -26,8 +26,8 @@ mainContent.addEventListener("click", () => {
 // toggle button end
 
 
-// wow.js activate
-new WOW().init();
+// wowjs activate
+// new WOW().init();
 
 // mixitup activate
 const mixer = mixitup('.container');
@@ -36,7 +36,7 @@ const mixer = mixitup('.container');
 const btnArea = document.querySelector('.portfolio__filter');
 const portfBtns = document.querySelectorAll('.filter__btn');
 
-btnArea.addEventListener('click', (e) => {
+btnArea.addEventListener('click', function(e) {
     if (e.target.tagName == 'BUTTON') {
         for (let i = 0; i < portfBtns.length; i++) {
             portfBtns[i].classList.remove('active');
@@ -49,10 +49,10 @@ btnArea.addEventListener('click', (e) => {
 
 const nav = document.querySelectorAll('.nav li a');
 
-document.addEventListener('scroll', () => {
+document.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
 
-    sections.forEach((item, i) => {
+    sections.forEach(function(item, i) {
         let top = item.offsetTop - 100;
         let bottom = item.offsetHeight + top;
         let scroll = pageYOffset;
@@ -65,7 +65,7 @@ document.addEventListener('scroll', () => {
 });
 
 function reassignActiveLink(arr, value) {
-    arr.forEach((item, i) => {
+    arr.forEach(function(item, i) {
         if (item.classList.contains('active')) {
             item.classList.remove('active');
         }
