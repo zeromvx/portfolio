@@ -95,89 +95,8 @@
         .active
             color: #7280ff
 
-.toggle-icon
-    width: 45px
-    height: 45px
-    text-align: center
-    margin-right: 0px
-    border-radius: 50%
-    cursor: pointer
-    position: fixed
-    right: 20px
-    top: 20px
-    background: #7280ff
-    z-index: 8
-    display: none
-    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
-
-    #nav-icon3
-        width: 100%
-        height: 100%
-        padding: 0px 10px
-        position: relative
-        top: 0px
-        left: 0px
-        -webkit-transition: .5s ease-in-out
-        -moz-transition: .5s ease-in-out
-        -o-transition: .5s ease-in-out
-        transition: .5s ease-in-out
-        cursor: pointer
-  
-  
-    #nav-icon3 span 
-        display: block
-        height: 2px
-        width: 45%
-        left: 13px
-        position: absolute
-        background: #fff
-        border-radius: 9px
-        opacity: 1
-        -webkit-transform: rotate(0deg)
-        -moz-transform: rotate(0deg)
-        -o-transform: rotate(0deg)
-        transform: rotate(0deg)
-        -webkit-transition: .25s ease-in-out
-        -moz-transition: .25s ease-in-out
-        -o-transition: .25s ease-in-out
-        transition: .25s ease-in-out   
-    
-    #nav-icon3 span:nth-child(1) 
-        top: 17px
-    
-    #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) 
-        top: 22px
-    
-    #nav-icon3 span:nth-child(4) 
-        top: 27px
-    
-    #nav-icon3.open span:nth-child(1) 
-        top: 27px
-        width: 0%
-        left: 50%
-    
-    #nav-icon3.open span:nth-child(2) 
-        -webkit-transform: rotate(45deg)
-        -moz-transform: rotate(45deg)
-        -o-transform: rotate(45deg)
-        transform: rotate(45deg)
-    
-    #nav-icon3.open span:nth-child(3) 
-        -webkit-transform: rotate(-45deg)
-        -moz-transform: rotate(-45deg)
-        -o-transform: rotate(-45deg)
-        transform: rotate(-45deg)
-    
-    
-    #nav-icon3.open span:nth-child(4) 
-        top: 27px
-        width: 0%
-        left: 50%
-  
 
 @media screen and (max-width: 1024px)
     .header
         left: -100%
 
-    .toggle-icon
-        display: block

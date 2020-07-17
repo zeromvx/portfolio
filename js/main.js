@@ -1,77 +1,68 @@
-// toggle button 
-const toggleBtn = document.querySelector('.toggle-icon');
-const header = document.querySelector('.header');
-const icon = document.getElementById('nav-icon3');
-const mainContent = document.querySelector(".main-content");
+// toggle button
+const toggleBtn = document.querySelector(".toggle-icon"); // toggle button
+const header = document.querySelector(".header"); // header section
+const icon = document.querySelector(".toggle-icon");
 
-toggleBtn.addEventListener('click', function() {
-    if (!toggleBtn.classList.contains('active')) {
-        toggleBtn.classList.add('active');
-        icon.classList.add('open');
-        header.style.left = '0';
-    } else {
-        toggleBtn.classList.remove('active');
-        icon.classList.remove('open');
-        header.style.left = '-100%';
-    }
+const mainContent = document.querySelector(".main-content"); // main content section
+const nav = document.querySelectorAll(".nav li a"); // nav list
+
+const filterArea = document.querySelector(".portfolio__filter"); // filter section
+const filterBtns = document.querySelectorAll(".filter__btn");
+
+const mixer = mixitup(".container"); // mixitup activate
+
+// adaptive menu listeners
+toggleBtn.addEventListener("click", function () {
+	if (!toggleBtn.classList.contains("active")) {
+		toggleBtn.classList.add("active");
+		icon.classList.add("open");
+		header.style.left = "0";
+	} else {
+		toggleBtn.classList.remove("active");
+		icon.classList.remove("open");
+		header.style.left = "-100%";
+	}
 });
 
-mainContent.addEventListener("click", function() {
-    if (toggleBtn.classList.contains('active')) {
-        toggleBtn.classList.remove('active');
-        icon.classList.remove('open');
-        header.style.left = '-100%';
-    }
+mainContent.addEventListener("click", function () {
+	if (toggleBtn.classList.contains("active")) {
+		toggleBtn.classList.remove("active");
+		icon.classList.remove("open");
+		header.style.left = "-100%";
+	}
 });
-// toggle button end
+// adaptive menu listeners end
 
-
-// wowjs activate
-// new WOW().init();
-
-// mixitup activate
-const mixer = mixitup('.container');
-
-// portfolio filter buttons
-const btnArea = document.querySelector('.portfolio__filter');
-const portfBtns = document.querySelectorAll('.filter__btn');
-
-btnArea.addEventListener('click', function(e) {
-    if (e.target.tagName == 'BUTTON') {
-        for (let i = 0; i < portfBtns.length; i++) {
-            portfBtns[i].classList.remove('active');
-        }
-        e.target.classList.add('active');
-    }
+filterArea.addEventListener("click", function (e) {
+	if (e.target.tagName == "BUTTON") {
+		for (let i = 0; i < filterBtns.length; i++) {
+			filterBtns[i].classList.remove("active");
+		}
+		e.target.classList.add("active");
+	}
 });
 
 // nav progress bar
 
-const nav = document.querySelectorAll('.nav li a');
+document.addEventListener("scroll", function () {
+	const sections = document.querySelectorAll("section");
 
-document.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('section');
+	sections.forEach(function (item, i) {
+		let top = item.offsetTop - 100;
+		let bottom = item.offsetHeight + top;
+		let scroll = pageYOffset;
+		let id = item.id;
 
-    sections.forEach(function(item, i) {
-        let top = item.offsetTop - 100;
-        let bottom = item.offsetHeight + top;
-        let scroll = pageYOffset;
-        let id = item.id;
-
-        if (scroll > top && scroll < bottom) {
-            reassignActiveLink(nav, id);
-        }
-    });
+		if (scroll > top && scroll < bottom) {
+			reassignActiveLink(nav, id);
+		}
+	});
 });
 
 function reassignActiveLink(arr, value) {
-    arr.forEach(function(item, i) {
-        if (item.classList.contains('active')) {
-            item.classList.remove('active');
-        }
-
-        if (item.getAttribute('href') == '#' + value) {
-            item.classList.add('active');
-        }
-    });
+	arr.forEach(function (item, i) {
+		item.classList.toggle("active");
+	});
 }
+
+// nav progress bar end

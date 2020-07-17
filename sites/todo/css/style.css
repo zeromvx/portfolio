@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open-Sans", sans-serif;
+	background: #f5f5f5;
+	color: #666;
+}
+
+ul {
+	list-style: none;
+}
+
+.completed {
+	color: rgba(0, 0, 0, 0.25);
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8rem 1rem 1rem;
+}
+
+.container .title {
+	padding: 1rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.container form {
+	width: 100%;
+	max-width: 450px;
+	margin: 1rem 0 0;
+	display: flex;
+	position: relative;
+	box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.container .input-task {
+	height: 48px;
+	padding: 0.7rem 1.75rem;
+	width: calc(100% - 65px);
+	font-size: 1.25rem;
+	outline: 0;
+	border: 0.5px solid #e8e8e8;
+}
+
+.container .submit-btn {
+	width: 65px;
+	height: 48px;
+	background: #7ac57c;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	border: 0.5px solid #e8e8e8;
+	outline: 0;
+}
+
+.error-message {
+	position: absolute;
+	width: 100%;
+	top: 130%;
+	padding: 0.65rem 1rem;
+	background: #e85d70;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 5px;
+	box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+	z-index: -10;
+	display: none;
+	transition: all 1s ease;
+}
+
+.error-message::before {
+	position: absolute;
+	content: "";
+	left: 15px;
+	top: -50%;
+	border-style: solid;
+	border-width: 10px 10px 10px 10px;
+	border-color: transparent transparent #e85d70 transparent;
+}
+
+.error-message__active {
+	z-index: 10;
+	display: block;
+}
+
+.error-message p {
+	display: inline-block;
+}
+
+.delete-error-message {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 25px;
+	height: 25px;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.delete-error-message::before,
+.delete-error-message::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1px;
+	height: 15px;
+	background: #fff;
+}
+
+.delete-error-message::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.delete-error-message::after {
+	transform: translate(-50%, -50%) rotate(135deg);
+}
+
+@media screen and (max-width: 480px) {
+	.container .input-task {
+		height: 45px;
+		padding: 0.6rem 1.6rem;
+		width: calc(100% - 55px);
+		font-size: 1.2rem;
+	}
+
+	.container .submit-btn {
+		width: 55px;
+		height: 45px;
+		font-size: 0.95rem;
+	}
+}
+
+.container .data-wrap {
+	width: 100%;
+	max-width: 450px;
+	margin-top: 1rem;
+	background: #fff;
+	border: 0.5px solid #e8e8e8;
+	box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.container .data-wrap li {
+	position: relative;
+	padding: 1.25rem 1rem;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.container .data-wrap .toggle {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+
+.container .data-wrap label {
+	position: relative;
+	padding-left: 2.15rem;
+}
+
+.toggle + span::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	border: 1px solid #adb5bd;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+	cursor: pointer;
+}
+
+.toggle:not(:disabled):not(:checked) + span:hover::before {
+	border-color: #63bd6f;
+}
+
+.toggle:not(:disabled):active + span::before {
+	background-color: #c5f1cb;
+	border-color: #c5f1cb;
+}
+
+.toggle:focus:not(:checked) + span::before {
+	border-color: #63bd6f;
+}
+
+.toggle:checked + span::before {
+	border-color: #63bd6f;
+	color: #63bd6f;
+	background-image: url("../img/icon.svg");
+}
+
+.container .data-wrap .delete {
+	position: absolute;
+	top: 50%;
+	width: 25px;
+	height: 25px;
+	right: 1.25rem;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	color: rgb(233, 101, 101);
+}
+
+.container .data-wrap .delete::before,
+.container .data-wrap .delete::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1px;
+	height: 15px;
+	background: rgb(233, 101, 101);
+}
+
+.container .data-wrap .delete::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.container .data-wrap .delete::after {
+	transform: translate(-50%, -50%) rotate(135deg);
+}

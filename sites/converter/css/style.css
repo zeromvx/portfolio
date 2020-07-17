@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	color: #666;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	padding: 1rem;
+	background: linear-gradient(45deg, #fca5f1, #b5ffff);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.converter-wrap {
+	padding: 1rem;
+	border-radius: 15px;
+	background: linear-gradient(45deg, #d6a2e8, #f8efba);
+	border: 2px solid #7578e7;
+	box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.converter {
+	margin: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.converter input {
+	width: 100px;
+}
+
+.converter select {
+	width: 75px;
+}
+
+.converter input,
+.converter select {
+	border-radius: 5px;
+	padding: 5px;
+	background: #fff;
+	color: #666;
+	border: 1px solid #666;
+	width: 80px;
+	text-align: center;
+}
+
+.changer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.change-btn {
+	width: 70px;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+.change-btn img {
+	width: 40px;
+	cursor: pointer;
+}
