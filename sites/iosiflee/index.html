@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Iosif Lee</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header" id="header">
+        <!-- NAVBAR -->
+        <div class="navbar" id="nav">
+
+            <div class="navbar__wrap">
+
+                <p class="navbar__logo">IosifLee</p>
+
+                <input type="checkbox" class="switcher" id="menu">
+
+                <label for="menu" class="open">
+                    <i class="fa fa-bars fa-2x"></i>
+                </label>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="navbar__item"><a href="#header" class="navbar__link">главная</a></li>
+                        <li class="navbar__item"><a href="#about" class="navbar__link">о нас</a></li>
+                        <li class="navbar__item"><a href="#services" class="navbar__link">услуги</a></li>
+                        <li class="navbar__item"><a href="#reviews" class="navbar__link">отзывы</a></li>
+                        <li class="navbar__item"><a href="#contact" class="navbar__link">контакты</a></li>
+                    </ul>
+                    
+                    <label for="menu" class="close">
+                        <i class="fa fa-times fa-2x"></i>
+                    </label>
+                </nav>
+
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+
+
+
+        <div class="header__body">
+            <h1 class="header__title">Центр медитации Иосифа Ли</h1>
+
+            <div class="header__descr">
+                <p>Найди свой путь вместе с Иосифом Ли</p>
+                <p>Запишись на бесплатное пробное занятие. Мы поможем обрести себя!</p>
+            </div>
+
+            <a href="#about" class="btn-neon">
+                <span class="btn-neon__line btn-neon__line--top"></span>
+                <span class="btn-neon__line btn-neon__line--right"></span>
+                <span class="btn-neon__line btn-neon__line--bottom"></span>
+                <span class="btn-neon__line btn-neon__line--left"></span>
+                Узнать больше
+            </a>
+        </div>
+        <div class="background"></div>
+    </header>
+
+    <!-- END HEADER -->
+
+    <section class="about-us" id="about">
+        <div class="about-us-wrap">
+
+            <div class="about-us__logo">
+                <img src="img/natureandman.jpg" alt="" class="woman">
+            </div>
+            <!-- /.about-us__logo -->
+
+            <div class="about-us__descr">
+                <h3>Кто мы такие:</h3>
+
+                <p>Центр йоги и медитации Иосифа Ли - это отличный, недорогой, проверенный временем выбор людей,
+                    желающих заниматься собой и своим развитием.
+                    На протяжении сотен лет мы помогали людям обрести себя, обрести смысл. Каждый из наших клиентов
+                    получал максимальный уровень сервиса и поддрежки
+                    . Если вы хотите обрести физический и духовный покой и удовлетворение, мы вам поможем!
+                </p>
+
+                <a href="#services" class="btn-neon">
+                    <span class="btn-neon__line btn-neon__line--top"></span>
+                    <span class="btn-neon__line btn-neon__line--right"></span>
+                    <span class="btn-neon__line btn-neon__line--bottom"></span>
+                    <span class="btn-neon__line btn-neon__line--left"></span>
+                    Услуги
+                </a>
+            </div>
+            <!-- /.about-us__description -->
+        </div>
+        <!-- /.about-us-wrap -->
+    </section>
+    <!-- /.about-us -->
+
+    <!-- SECTION services US  -->
+    <section class="services" id="services">
+        <div class="services-container">
+
+            <span class="services__logo">Услуги</span>
+
+            <p class="services__desc">
+                В центре йоги и медитации Иосифа Ли доступны четыре услуги на выбор:
+            </p>
+
+            <!-- SERVICES BLOCK -->
+
+            <ul class="services__list">
+                <li class="service services__item">
+                    <div class="service__front">
+                        <img src="img/med.png" alt="" class="service__logo">
+                        <p class="service__desc">Уроки медитации</p>
+                    </div>
+                    <div class="service__back">
+                        <p>На уроке медитации вы будете учиться... Конечно же медитации, котролю над телом и разумом. Вы
+                            научитесь
+                            сосредотачиваться на необходимых вещах в нужный момент.</p>
+                        <p>Цена одного занятия: 500р.</p>
+                        <p>Зантия в нашем центре проходят ежедневно с 17 до 21 по мск. Вы можете прийти и уйти в любое
+                            рабочее время</p>
+                    </div>
+                </li>
+
+                <li class="service services__item">
+                    <div class="service__front">
+                        <img src="img/yoga.png" alt="" class="service__logo">
+                        <p class="service__desc">Йога</p>
+                    </div>
+                    <div class="service__back">
+                        <p>На уроках йоги вы закалите свое тело, сделаете его более гибким. Вы также научитесь контролю
+                            тела и движений.
+                            Занятия по йоге улучшат вашу осанку и придадут уверенности в себе.
+                        </p>
+                        <p>Цена одного занятия: 700р</p>
+                        <p>Занятия проходят ежедневно с 17 до 21 по мск. Продолжительность одной тренеровки - 40 мин.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="service services__item">
+                    <div class="service__front">
+                        <img src="img/msg.png" alt="" class="service__logo">
+                        <p class="service__desc">Массаж</p>
+                    </div>
+                    <div class="service__back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatum atque, magni
+                            similique ex adipisci amet? Expedita tempore neque officia possimus deleniti dolores
+                            dolorum, qui, perspiciatis voluptate, optio corporis aliquid?</p>
+                    </div>
+                </li>
+
+                <li class="service services__item">
+                    <div class="service__front">
+                        <img src="img/yoga3.svg" alt="" class="service__logo">
+                        <p class="service__desc">Полет</p>
+                    </div>
+                    <div class="service__back">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam quisquam ut officia unde
+                            amet, sed iure omnis laborum, qui repudiandae voluptatum libero quidem voluptas quasi
+                            explicabo sequi reprehenderit ipsum.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#record-form" class="btn-to-record">Записаться</a>
+            <!-- END SERVICES BLOCK -->
+
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="reviews__container">
+            <span class="reviews__logo">Отзывы</span>
+
+            <!-- SERVICES BLOCK -->
+
+            <div class="reviews__items">
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <p class="reviews__text">Равным образом консультация с широким активом требуют определения и
+                            уточнения модели развития.
+                            Товарищи! сложившаяся структура организации представляет собой интересный эксперимент
+                            проверки направлений прогрессивного развития.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">Идейные соображения высшего порядка, а также рамки и место обучения
+                            кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+                            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+                            деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых
+                            предложений.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">С другой стороны рамки и место обучения кадров способствует подготовки
+                            и реализации модели развития.
+                            Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке
+                            систем массового участия.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                </ul>
+
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <p class="reviews__text">Не следует, однако забывать, что дальнейшее развитие различных форм
+                            деятельности способствует подготовки и реализации форм развития.
+                            Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
+                            выполнять важные задания по разработке модели развития.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">Задача организации, в особенности же экономическая повестка
+                            сегодняшнего дня требуют определения и уточнения направлений прогрессивного развития. Не
+                            следует, однако, забывать, что перспективное планирование способствует подготовке и
+                            реализации существенных финансовых и административных условий.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">Также как постоянный количественный рост и сфера нашей активности
+                            обеспечивает широкому кругу специалистов участие в формировании дальнейших направлений
+                            развития. Ко всему прочему, новая модель организационной деятельности играет определяющее
+                            значение для направлений прогрессивного развития.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+
+                    </li>
+                </ul>
+
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <p class="reviews__text">Задача организации, в особенности же реализация намеченных плановых
+                            заданий выявляет срочную потребность стандартных подходов. </p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">В целом, конечно, внедрение современных подходов вынуждает нас
+                            объективно потребовать новых предложений. </p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                    <li class="reviews__item">
+                        <p class="reviews__text">Повседневная практика показывает, что экономическая повестка
+                            сегодняшнего дня не дает нам иного выбора, кроме определения экономических и не
+                            экономических факторов и перспектив.</p>
+                        <img src="img/man-icon.svg" alt="" class="author-photo">
+                        <span>
+                            Алек Воск <br>
+                            <small>Юрист</small>
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <div class="adress">
+                <h3>Наши контакты</h3>
+                <p><i class="fa fa-map" style="color: #3EC483;"></i> г. Москва, ул. Пушкина, д. Колотушкина</p>
+                <p><i class="fa fa-phone" style="color: #3EC483;"></i> + 7 999 99 99 99</p>
+                <p><i class="fa fa-envelope" style="color: #3EC483;"></i> example@gmail.com</p>
+                <p><i class="fa fa-globe" style="color: #3EC483;"></i> iosiflee.com</p>
+            </div>
+            <div class="record-form" id="record-form">
+                <h3>Запись</h3>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="+ 7 999 99 99 99">
+                <input type="text" placeholder="example@gmail.com">
+                <button class="btn-submit">Записаться</button>
+            </div>
+            <p>После того, как вы запишетесь, вам позвонит наш работник для консультации и потверждения записи. По факту
+                потверждения на вашу электронную почту придет чек.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>1000 - 2020. Iosif Lee Inc.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
