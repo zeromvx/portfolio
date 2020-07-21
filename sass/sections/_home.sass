@@ -1,25 +1,25 @@
 .home 
-    height: 100vh
+    position: relative
     display: flex
     justify-content: center
     align-items: center
+    min-height: 100vh
     background-image: url("../img/home-bg.jpg")
     background-repeat: no-repeat
     background-position: center
     background-size: cover
     background-attachment: fixed
-    position: relative
     color: #ffffff
 
     &::before
-        position: absolute
+        z-index: 2
         content: ""
-        background: rgba(0, 0, 0, .75)
+        position: absolute
         top: 0
         right: 0
         left: 0
         bottom: 0
-        z-index: 2
+        background: rgba(0, 0, 0, .75)
 
     &__content
         z-index: 4
@@ -33,17 +33,17 @@
         max-width: 230px
 
         img
-            width: 100%
+            margin: .8rem 0
             border: 5px solid #8792f1
             border-radius: 50%
-            margin: .8rem 0
+            width: 100%
             box-shadow: 0px 0px 11px 6px rgba(#8792f1, 0.37)
 
     &__name
+        margin-bottom: 1rem
         font-size: 2.5rem
         line-height: 50px
         font-weight: 700
-        margin-bottom: 1rem
 
         @media screen and (max-width: 768px)
             font-size: 2rem
@@ -73,7 +73,7 @@
             color: #7280ff
         i
             width: 100%
-            font-size: 24px
             color: #ffffff
+            font-size: 24px
             transition: all 0.3s ease-in
         

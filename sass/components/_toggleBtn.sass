@@ -1,40 +1,37 @@
 .toggle-btn
-    width: 45px
-    height: 45px
-    text-align: center
-    margin-right: 0px
-    border-radius: 50%
-    cursor: pointer
+    z-index: 8
+    display: none
     position: fixed
     right: 20px
     top: 20px
+    margin-right: 0px
+    border-radius: 50%
+    width: 45px
+    height: 45px
+    text-align: center
+    cursor: pointer
     background: #7280ff
-    z-index: 8
-    display: none
+    
     box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1)
 
     .toggle-icon
-        width: 100%
-        height: 100%
-        padding: 0px 10px
         position: relative
         top: 0px
         left: 0px
-        -webkit-transition: .5s ease-in-out
-        -moz-transition: .5s ease-in-out
-        -o-transition: .5s ease-in-out
+        padding: 0px 10px
+        width: 100%
+        height: 100%
         transition: .5s ease-in-out
         cursor: pointer
   
-  
     .toggle-icon span 
+        position: absolute
+        left: 13px
         display: block
+        border-radius: 9px
         height: 2px
         width: 45%
-        left: 13px
-        position: absolute
         background: #fff
-        border-radius: 9px
         opacity: 1
         transform: rotate(0deg)
         transition: .25s ease-in-out   
@@ -50,8 +47,8 @@
     
     .toggle-icon.open span:nth-child(1) 
         top: 27px
-        width: 0%
         left: 50%
+        width: 0%
     
     .toggle-icon.open span:nth-child(2) 
         transform: rotate(45deg)
@@ -62,8 +59,8 @@
     
     .toggle-icon.open span:nth-child(4) 
         top: 27px
-        width: 0%
         left: 50%
+        width: 0%
   
 
 @media screen and (max-width: 1024px)
