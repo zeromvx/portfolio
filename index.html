@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergey Karmanov</title>
     <!-- FontAwesome -->
-    <script src="https://use.fontawesome.com/1d7b4baedf.js"></script>
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -236,83 +236,168 @@
 
             <div class="portfolio__filter filter-options">
                 <button class="filter__btn active" data-filter="all">All</button>
-                <button class="filter__btn" data-filter=".category-a">Layouts</button>
-                <button class="filter__btn" data-filter=".category-b">JS</button>
-                <button class="filter__btn" data-group="react">React</button>
+                <button class="filter__btn" data-filter="layouts">Layouts</button>
+                <button class="filter__btn" data-filter="js">JS</button>
+                <button class="filter__btn" data-filter="react">React</button>
             </div>
             <!-- /.portfolio__filter -->
 
-            <ul class="portfolio__content container">
+            <ul class="portfolio__content container my-shuffle">
 
-                <li class="work mix category-a " data-order="1">
+                <li class="work mix category-a " data-order="1" data-groups='["layouts"]'>
                     <figure>
-                        <img src="img/about.jpg" alt="" class="work__image">
-                        <figcaption class="work__descr">HTML shablon</figcaption>
-                    </figure>
-                </li>
 
-                <li class="work mix category-a " data-order="1">
-                    <figure>
-                        <img src="img/about.jpg" alt="" class="work__image">
-                        <figcaption class="work__descr">HTML shablon</figcaption>
-                    </figure>
-                </li>
+                        <div class="image-wrap">
 
-                <li class="work mix category-a " data-order="1">
-                    <figure>
-                        <img src="img/webapp.jpg" alt="" class="work__image">
+                            <p class="work__image-descr">This is responsive landing which I made for train my skills, using Sass,
+                                Gulp.You can see code of this project in my github.
+                            </p>
+
+                            <img src="img/webapp.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/landing" target="_blank">Github</a>
+
+                            <a href="https://github.com/zeromvx/landing" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
                             <a href="sites/webapp/index.html" target="_blank">Wep app</a>
                         </figcaption>
                     </figure>
                 </li>
 
-                <li class="work mix category-a " data-order="1">
+                <li class="work mix category-a " data-order="1" data-groups='["layouts"]'>
                     <figure>
-                        <img src="img/iosiflee.jpg" alt="" class="work__image">
+
+                        <div class="image-wrap">
+
+                            <p class="work__image-descr">This is responsive landing which I made for train my skills, using Sass,
+                                Gulp.You can see code of this project in my github.
+                            </p>
+
+                            <img src="img/webapp.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/iosiflee" target="_blank">Github</a>
+
+                            <a href="https://github.com/zeromvx/landing" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+                            <a href="sites/webapp/index.html" target="_blank">Wep app</a>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="work mix category-a " data-order="1" data-groups='["layouts"]'>
+                    <figure>
+
+                        <div class="image-wrap">
+                            <p class="work__image-descr">
+                                This is responsive landing which I made for train my skills, using Sass.
+                                Design was done by me.
+                            </p>
+
+                            <img src="img/iosiflee.jpg" alt="" class="work__image">
+                        </div>
+
+                        <figcaption class="work__descr">
+
+                            <a href="https://github.com/zeromvx/iosiflee" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+
                             <a href="sites/iosiflee/index.html" target="_blank">Landing Iosif Lee</a>
                         </figcaption>
                     </figure>
                 </li>
 
-                <li class="work mix category-b " data-order="2">
+                <li class="work mix category-b " data-order="2" data-groups='["js"]'>
                     <figure>
-                        <img src="img/todo.jpg" alt="" class="work__image">
+
+                        <div class="image-wrap">
+                            <p class="work__image-descr">
+                                This is simple to-do list. You can see, create, remove tasks. Data store into LocaleStorage.
+                                If you complete the task, click on ready button, and if you reload page, deleted task won`t exist.
+                            </p>
+                            <img src="img/todo.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/todo" target="_blank">Github</a>
+                            <a href="https://github.com/zeromvx/todo" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+
                             <a href="sites/todo/index.html" target="_blank">To-Do list</a>
                         </figcaption>
                     </figure>
                 </li>
 
-                <li class="work mix category-b " data-order="2">
+                <li class="work mix category-b " data-order="2" data-groups='["js"]'>
                     <figure>
-                        <img src="img/snake.jpg" alt="" class="work__image">
+
+                        <div class="image-wrap">
+                            <p class="work__image-descr">
+                                This is game was made using canvas. The game stars when the arrow buttons are pressed.
+                            </p>
+                            <img src="img/snake.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/snakegame" target="_blank">Github</a>
+
+                            <a href="https://github.com/zeromvx/snakegame" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+
                             <a href="sites/snake-game/index.html" target="_blank">Snake game</a>
                         </figcaption>
                     </figure>
                 </li>
 
-                <li class="work mix category-b " data-order="2">
+                <li class="work mix category-b " data-order="2" data-groups='["js"]'>
                     <figure>
-                        <img src="img/converter.jpg" alt="" class="work__image">
+
+                        <div class="image-wrap">
+                            <p class="work__image-descr">
+                                This is web app that send query to API and show current course.
+                            </p>
+                            <img src="img/converter.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/converter" target="_blank">Github</a>
+
+                            <a href="https://github.com/zeromvx/converter" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
                             <a href="sites/converter/index.html" target="_blank">Currency Converter</a>
                         </figcaption>
                     </figure>
                 </li>
 
-                <li class="work mix category-b " data-order="2">
+                <li class="work mix category-b " data-order="2" data-groups='["js"]'>
                     <figure>
-                        <img src="img/search.jpg" alt="" class="work__image">
+
+                        <div class="image-wrap">
+                            <p class="work__image-descr">
+                                It`s project for train my js skills.
+                                When we input data, data is filter and coincidences shows in dataBox.
+                                Also when we click search, opens a new window of yandex search with your data.
+                            </p>
+                            <img src="img/search.jpg" alt="" class="work__image">
+                        </div>
+
                         <figcaption class="work__descr">
-                            <a href="https://github.com/zeromvx/livesearch" target="_blank">Github</a>
+
+                            <a href="https://github.com/zeromvx/livesearch" target="_blank" class="work__github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+
                             <a href="sites/livesearch/index.html" target="_blank">Live search</a>
                         </figcaption>
                     </figure>
@@ -330,8 +415,10 @@
     <!-- /.main-content -->
 
 
-    <script src="libs/mixitup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="libs/js/shuffle.min.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/adaptiveNav.js"></script>
+    <script src="js/progressBar.js"></script>
 </body>
 
 </html>
