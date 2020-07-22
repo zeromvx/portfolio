@@ -6,11 +6,15 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-var navList = document.querySelector(".nav-list");
-var navbar = document.querySelector(".navbar");
+var navList = document.querySelector(".nav-list"); // nav links list
+
+var navbar = document.querySelector(".navbar"); // navbar block
+
 var toggleBtn = document.querySelector(".toggle-btn");
-var icon = document.querySelector(".toggle-icon");
-var navbarBtn = document.querySelector(".navbar__btn");
+var icon = document.querySelector(".toggle-icon"); // toggle-line
+
+var navbarBtn = document.querySelector(".navbar__btn"); //adaptive toggle btn
+
 toggleBtn.addEventListener("click", function () {
   navList.classList.toggle("nav-list-active");
   icon.classList.toggle("open");
@@ -48,7 +52,8 @@ toggleBtn.addEventListener("click", function () {
       _iterator2.f();
     }
   }
-});
+}); // add background, box-shadow for navbar and change color for btn when we scrolled navbar
+
 document.addEventListener("scroll", function () {
   if (pageYOffset > navbar.offsetHeight) {
     navbar.style.background = "#59687C";

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- swiper slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -53,7 +56,7 @@
         <div class="wrapper header__wrapper">
 
             <div class="header__title">
-                <h1>The <span class="title--pink">easiest</span> & most <span class="title--pink">secure</span> online
+                <h1 class="wow fadeInUp" data-wow-duration="1s">The <span class="title--pink">easiest</span> & most <span class="title--pink">secure</span> online
                     chat room</h1>
                 <div class="newsletter">
                     <input type="text" placeholder="Enter your email">
@@ -235,8 +238,8 @@
                     </ul>
                 </div>
 
-                <div class="cloud integration__cloud">
-                    <svg class="cloud__item svg-cloud1">
+                <div class="cloud integration__cloud wow fadeIn" data-wow-duration="2s">
+                    <svg class="cloud__item svg-cloud1"> 
                         <use xlink:href="images/clouds.svg#cloud1"></use>
                     </svg>
                     <svg class="cloud__item svg-cloud1">
@@ -301,7 +304,7 @@
                     <button class="btn">Download</button>
                 </div>
 
-                <div class="design__image">
+                <div class="design__image wow fadeInRight" data-wow-duration="1s">
                     <img src="images/design-image.png" alt="">
                 </div>
 
@@ -314,7 +317,7 @@
             <div class="wrapper overview__wrapper">
 
                 <figure class="overview__item">
-                    <img src="images/overview1.png" alt="overview1">
+                    <img src="images/overview1.png" alt="overview1" class="wow fadeInDown" data-wow-duration="1s">
 
                     <figcaption>
                         <h3 class="overview__title">Lorem Ipsum Dolor Sit</h3>
@@ -324,7 +327,7 @@
                 </figure>
 
                 <figure class="overview__item">
-                    <img src="images/overview2.png" alt="overview2">
+                    <img src="images/overview2.png" alt="overview2" class="wow fadeInDown" data-wow-duration="1s">
 
                     <figcaption>
                         <h3 class="overview__title">Lorem Ipsum Dolor Sit</h3>
@@ -375,7 +378,7 @@
                 </div>
 
                 <div class="award__image">
-                    <img src="images/award.png" alt="">
+                    <img src="images/award.png" alt="" class="wow fadeInRight" data-wow-duration="1s">
                 </div>
 
             </div>
@@ -487,7 +490,7 @@
 
             <figure class="footer__item">
                 <img src="images/logo.png" alt="logo" class="logo">
-                <figcaption>
+                <figcaption class="footer__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Donec elementum ligula eu sapien consequat eleifend.</p>
                 </figcaption>
@@ -495,13 +498,13 @@
 
             <div class="footer__item">
                 <h3>Quick nav</h3>
-                <ul>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">How it work</a></li>
-                    <li><a href="">Integrate</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">API doc</a></li>
-                    <li><a href="">Contant</a></li>
+                <ul class="footer__list">
+                    <li class="list__item"><a href="#">Features</a></li>
+                    <li class="list__item"><a href="#">How it work</a></li>
+                    <li class="list__item"><a href="#">Integrate</a></li>
+                    <li class="list__item"><a href="#">Pricing</a></li>
+                    <li class="list__item"><a href="#">API doc</a></li>
+                    <li class="list__item"><a href="#">Contant</a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -529,6 +532,10 @@
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="libs/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
