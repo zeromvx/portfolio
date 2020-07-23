@@ -10,6 +10,12 @@
     transition: all 0.5s 
     background: #ffffff
 
+    @media screen and (max-width: 1024px)
+        left: -100%
+
+    &--active
+        left: 0
+
 .navbar
 
     &__logo
@@ -96,8 +102,4 @@
         .active
             color: #7280ff
 
-
-@media screen and (max-width: 1024px)
-    .header
-        left: -100%
 
