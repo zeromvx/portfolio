@@ -57,23 +57,41 @@
 .socials
     margin: 1.5rem
 
-    li
+    &__item
+        position: relative
         display: inline-block
+        margin: 0 .25rem
+        border-radius: 5px
+        width: 40px
+        height: 40px
 
-        a
-            display: block
-            width: 40px
-            height: 40px
-            font-size: 14px
-            line-height: 42px
-            text-align: center
-            
+        &:nth-child(1):hover .socials__icon
+            color:#4A76A8
 
-        &:hover i 
-            color: #7280ff
-        i
-            width: 100%
-            color: #ffffff
-            font-size: 24px
-            transition: all 0.3s ease-in
+        &:nth-child(2):hover .socials__icon
+            color:#786fa6
+
+        &:nth-child(3):hover .socials__icon
+            color: #0077B5
+
+        &:nth-child(4):hover .socials__icon
+            color: #cf6a87
+
+    &__link
+        display: block
+        font-size: 14px
+        line-height: 42px
+        text-align: center    
+
+        
+        
+    &__icon
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        color: #ffffff
+        font-size: 24px
+        transition: all 0.3s ease-in
         
