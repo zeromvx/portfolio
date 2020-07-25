@@ -12,7 +12,7 @@ switchBtns.forEach(item => {
 
 function render() {
 
-    fetch('http://www.mocky.io/v2/5bc3b9cc30000012007586b7')
+    fetch('https://run.mocky.io/v3/00f6d282-f4ab-4281-b115-d5a7a00fff19')
 
         .then( res => {
 
