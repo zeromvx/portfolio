@@ -1,19 +1,18 @@
-const toggleBtn = document.querySelector(".toggle-btn"), // toggle button
-	icon = document.querySelector(".toggle-icon"),
-	header = document.querySelector(".header"), // header section
-	mainContent = document.querySelector(".main-content"), // main content section
-	navList = document.querySelector('.nav'); 
+const toggleBtn = document.querySelector(".toggle-btn"); // toggle button
+const icon = document.querySelector(".toggle-icon");
+const mainContent = document.querySelector(".main"); // main content section
+const navList = document.querySelector('.nav__list'); 
 
 function addActiveClasses() {
 	toggleBtn.classList.add("active");
 	icon.classList.add("open");
-	header.classList.add("header--active");
+	navList.classList.add("nav__list--active");
 }
 
 function removeActiveClasses() {
 	toggleBtn.classList.remove("active");
 	icon.classList.remove("open");
-	header.classList.remove("header--active");
+	navList.classList.remove("nav__list--active");
 }
 
 toggleBtn.addEventListener("click", function () {
