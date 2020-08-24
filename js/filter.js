@@ -1,6 +1,6 @@
-const Shuffle = window.Shuffle;
-const filterArea = document.querySelector(".portfolio__filter"); // filter section
-const filterBtns = document.querySelectorAll(".filter__btn");
+const Shuffle = window.Shuffle,
+    filterArea = document.querySelector(".portfolio__filter"), // filter section
+    filterBtns = document.querySelectorAll(".filter__btn");
 
 const myShuffle = new Shuffle(document.querySelector('.my-shuffle'), {
     itemSelector: '.work',
@@ -21,6 +21,7 @@ filterArea.addEventListener("click", function (e) {
 
 filterBtns.forEach((item) => {
     item.addEventListener('click', () => {
+
         if (item.dataset['filter'] != 'all') {
             myShuffle.filter(item.dataset['filter']);
         } else {

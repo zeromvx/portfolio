@@ -13,18 +13,13 @@ switchBtns.forEach(item => {
 function render() {
 
     fetch('https://run.mocky.io/v3/00f6d282-f4ab-4281-b115-d5a7a00fff19')
-
         .then( res => {
 
             if (res.ok) {
-
                 preloader.style.display = "none";
-
                 return res.json();
             }
-
         })
-
         .then( data => {
             for (let i = data.length - 1; i > -1; i--) {
                 
